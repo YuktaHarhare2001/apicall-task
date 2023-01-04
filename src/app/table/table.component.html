@@ -1,0 +1,19 @@
+<div style="text-align: center;">
+    <h1><strong>Tradexa</strong></h1>
+    <button mat-raised-button (click)="openDialog()" color="primary">Add data</button>
+  <table border="1"> 
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Body</th>
+      
+    </tr>
+    <tr *ngFor="let user of userData">
+      <td>{{user.id}}</td>
+      <td>{{user.title}}</td>
+      <td>{{user.body}}</td>
+      
+    </tr>
+  </table>
+  </div>
+  <router-outlet></router-outlet>

@@ -1,0 +1,17 @@
+<h1 mat-dialog-title>Add data</h1>
+<div mat-dialog-content>
+  <form [formGroup]="productForm">
+    <mat-form-field appearance="outline">
+        <mat-label>Title</mat-label>
+        <input formControlName="title" matInput placeholder="Title">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Body</mat-label>
+        <input formControlName="body" matInput placeholder="Body">
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-action [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="addData()" >Save</button>
+</div>
